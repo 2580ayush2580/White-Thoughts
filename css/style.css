@@ -1,45 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-body,
-html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    max-width: 90%;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     text-align: center;
     display: flex;
+    margin: 0 auto 0 auto;
     flex-direction: column;
     overflow-x: hidden;
+    border: 1px solid brown;
 }
 
 #navbar {
     text-align: right;
+    margin-top: 1rem;
 }
 
-#showcase {
-    height: 17rem;
-    min-width: 90%;
-    padding: 0.5rem 2rem 0rem 0.5rem;
-    margin: 0 auto 0rem auto;
-    text-align: left;
-    background: url('./../img/trees-320.PNG') no-repeat center center;
-}
-
-#showcase span {
-    background-color: brown;
-    color: white;
-    margin: 0px 3px 0px 3px;
-    padding: 0px 3px 0px 3px;
+img {
+    max-width: 100% !important;
 }
 
 #interest img {
-    max-width: 90%;
-    margin-top: 1rem;
-    border: 1px solid brown;
-}
-
-#boxes img {
-    max-width: 90%;
+    max-width: 80% !important;
 }
 
 #contact,
@@ -76,7 +63,9 @@ html {
 
 #footer {
     text-align: start;
-    line-height: 1rem;
+    /* line-height: 1rem; */
+    margin: 0;
+    font-size: 0.8rem;
 }
 
 #footer a {
@@ -84,113 +73,172 @@ html {
 }
 
 #footer p {
-    margin: 0 1rem 0 1rem;
+    margin: 0 auto 0 auto;
 }
 
-#footer #p2 {
-    margin-bottom: 1rem;
+@media(max-width:318px) {
+    body {
+        max-width: 95% !important;
+        font-size: 0.5rem;
+    }
+    #navbar img {
+        width: 6.5rem;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .visible {
+        display: none;
+    }
+    #contact1 {
+        text-align: center;
+    }
+    #contact2 {
+        text-align: center;
+    }
+    #footer p {
+        font-size: 0.31rem;
+    }
 }
 
 @media (min-width:319px)and (max-width:374px) {
     body {
-        font-size: 0.8rem;
-    }
-    #showcase {
-        text-align: left;
-        background: url('./../img/trees-320.PNG') no-repeat center center;
-    }
-    #contact1 {
-        margin-right: 0rem;
-    }
-    #contact2 {
-        margin-left: 0rem;
-        flex-direction: column;
-    }
-    #footer {
+        max-width: 95% !important;
         font-size: 0.5rem;
     }
-    #interest img {
-        max-width: 90%;
-        margin-top: 1rem;
-        border: 1px solid brown;
+    #navbar img {
+        width: 6.5rem;
     }
-    #boxes img {
-        max-width: 90%;
+    #contact {
+        flex-direction: column;
+    }
+    .visible {
+        display: none;
+    }
+    #contact1 {
+        text-align: center;
+    }
+    #contact2 {
+        text-align: center;
+    }
+    #footer p {
+        font-size: 0.31rem;
     }
 }
 
 @media (min-width:375px)and (max-width:424px) {
     body {
-        font-size: 0.8rem;
-    }
-    #showcase {
-        text-align: left;
-        background: url('./../img/trees-375.PNG') no-repeat center center;
-    }
-    #footer {
+        max-width: 95% !important;
         font-size: 0.5rem;
     }
-    #interest img {
-        max-width: 90%;
-        margin-top: 1rem;
-        border: 1px solid brown;
+    #navbar img {
+        width: 6.5rem;
     }
-    #boxes img {
-        max-width: 90%;
+    #contact {
+        flex-direction: column;
+    }
+    .visible {
+        display: none;
+    }
+    #contact1 {
+        text-align: center;
+    }
+    #contact2 {
+        text-align: center;
+    }
+    #footer {
+        font-size: 0.3rem;
     }
 }
 
-@media (min-width:425px)and (max-width:767px) {
+@media (min-width:425px)and (max-width:532px) {
     body {
-        font-size: 0.8rem;
+        max-width: 95% !important;
+        font-size: 0.7rem;
     }
-    #showcase {
-        text-align: left;
-        background: url('./../img/trees-425.PNG') no-repeat center center;
+    #navbar img {
+        width: 8.5rem;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .visible {
+        display: none;
+    }
+    #contact1 {
+        text-align: center;
+    }
+    #contact2 {
+        text-align: center;
     }
     #footer {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
+    }
+}
+
+@media (min-width:533px)and (max-width:767px) {
+    body {
+        width: 100% !important;
+        font-size: 0.7rem;
+    }
+    #navbar img {
+        width: 9.5rem;
+    }
+    #contact1 {
+        text-align: center;
+    }
+    #contact2 {
+        text-align: center;
+    }
+    #footer {
+        font-size: 0.4rem;
     }
 }
 
 @media (min-width:768px)and (max-width:1023px) {
     body {
-        max-width: 90%;
-        margin: 0 auto 0 auto;
+        width: 100% !important;
+        font-size: 1rem;
     }
-    #showcase {
-        background: url('./../img/trees-768.PNG') no-repeat center center/cover;
+    #contact1 {
+        text-align: center;
+    }
+    #contact2 {
+        text-align: center;
     }
     #footer {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 }
 
 @media (min-width:1024px)and (max-width:1440px) {
     body {
-        max-width: 90%;
-        margin: 0 auto 0 auto;
+        font-size: 1rem;
+        max-width: 70% !important;
     }
-    #showcase {
-        text-align: left;
-        background: url('./../img/trees-1024.PNG') no-repeat center center/cover;
+    #contact1 {
+        text-align: center;
     }
-    #footer {
-        font-size: 0.8rem;
+    #contact2 {
+        text-align: center;
+    }
+    #footer p {
+        font-size: 0.6rem;
     }
 }
 
 @media(min-width:1441px) {
     body {
-        max-width: 90%;
-        margin: 0 auto 0 auto;
+        max-width: 60% !important;
+        font-size: 1rem;
     }
-    #showcase {
-        max-width: 90%;
-        text-align: left;
-        background: url('./../img/trees-1441.PNG') no-repeat center center/cover;
+    #contact1 {
+        text-align: center;
     }
-    #footer {
-        font-size: 0.9rem;
+    #contact2 {
+        text-align: center;
+    }
+    #footer p {
+        font-size: 0.6rem;
     }
 }
